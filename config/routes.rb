@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  namespace :api do
+    namespace :v1 do
+      # Define routes for the GreetingsController (replace 'greeting' with your actual controller name)
+      resources :greetings, only: [:index]  # Example: 'index' action for listing greetings
+    end
+  end
+  
+  # Define your root route
+  root 'root#index'
 end
