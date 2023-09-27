@@ -89,6 +89,8 @@ Install this project with:
 ```sh
   cd my-project
   bundle install
+  npm i
+  yarn
 ```
 
 ### Usage
@@ -99,6 +101,7 @@ Example command:
 
 ```sh
   rails s
+  yarn build --watch
 ```
 
 
