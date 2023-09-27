@@ -5,7 +5,7 @@ function Greeting() {
 
   useEffect(() => {
     // Fetch the random greeting from your API endpoint
-    fetch('/random_greeting')
+    fetch('/api/v1/greetings')
       .then((response) => response.json())
       .then((data) => setMessage(data.message))
       .catch((error) => console.error(error));
@@ -14,7 +14,7 @@ function Greeting() {
   return (
     <div>
       <h1>Random Greeting</h1>
-      <p>{message}</p>
+      <h3>{message}</h3>
     </div>
   );
 }
