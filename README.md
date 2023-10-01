@@ -4,7 +4,7 @@
 
   <br/>
 
-  <h1><b>Hello world RoR
+  <h1><b>Hello world Ruby on Rails
 </b></h1>
 
 </div>
